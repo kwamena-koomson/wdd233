@@ -1,33 +1,42 @@
-@media (min-width: 1000px) {
-
-    body {
-        width: 100%;
+@media only screen and (min-width : 480px) {
+    header, nav, main, footer {
+        max-width: 992px;
     }
-    header {
-        width: 100%;
-        padding: 10px;
-        margin: 0 auto;
+    
+    #menu {
+        display: none;
     }
 
-    header img {
-        margin-right: 10px;
-        padding-top: 5px;
-    }
-
-    nav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-    }
+    nav ul {
+		display: flex;
+	}
+	
+    nav ul li {
+        display: block;
+		flex: 1 1 100%;
+	}
 
     main {
-        width: 100%;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
 
-    footer {
-        width: 100%;
-        margin: 0 auto;
+    .hero {
+        grid-column: 1 / 4;
+    }
+
+    .herolabel {
+        font-size: large;
+        top: 30px;
+        right: 30px;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        grid-column: 1 / 4;
+    }
+
+    iframe {
+        grid-column: 1 / 4;
     }
 }
