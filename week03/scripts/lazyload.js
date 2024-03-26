@@ -1,2 +1,1 @@
-const lastModifiedEl = document.querySelector("#js-last-mod");
-lastModifiedEl.textContent = document.lastModified;
+document.getElementById("lastModified").textContent = new Date(document.lastModified);
